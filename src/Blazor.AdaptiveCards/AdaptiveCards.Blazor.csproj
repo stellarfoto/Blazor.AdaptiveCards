@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <RazorLangVersion>3.0</RazorLangVersion>
+    <TargetFramework>net5.0</TargetFramework> 
     <IsPackable>true</IsPackable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Mikael Koskinen</Authors>
@@ -24,14 +23,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AdaptiveCards.Rendering.Html" Version="1.2.4" />
-    <PackageReference Include="Scriban" Version="2.0.1" />
-    <PackageReference Include="MinVer" Version="2.0.0" />
+    <PackageReference Include="AdaptiveCards.Rendering.Html" Version="2.7.2" />
+    <PackageReference Include="Scriban" Version="4.1.0" />
+    <PackageReference Include="MinVer" Version="2.5.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="5.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.10" />
   </ItemGroup>
 
   <ItemGroup>
